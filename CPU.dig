@@ -2,6 +2,18 @@
 <circuit>
   <version>1</version>
   <attributes/>
-  <visualElements/>
+  <visualElements>
+    <visualElement>
+      <elementName>ALU.dig</elementName>
+      <elementAttributes>
+        <entry>
+          <string>shapeType</string>
+          <shapeType>LAYOUT</shapeType>
+        </entry>
+      </elementAttributes>
+      <pos x="900" y="340"/>
+    </visualElement>
+  </visualElements>
   <wires/>
+  <measurementOrdering/>
 </circuit>
