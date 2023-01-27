@@ -12,6 +12,13 @@ Manual Stepping - button to switch from auto-clock to manual clock. Default high
 #### Databus Control
 Databus Manual Switch - Switch to manual input into the databus  
 
+#### Microinstructions
+RAw - Register A write. Writes to register from databus  
+RAr - Register A read. Outputs value to databus  
+
+RBw - Register B write. Writes to register from databus  
+RBr - Register B read. Outputs value to databus  
+
 ## ALU
 ### Inputs
 A - Number A (64 bit)  
