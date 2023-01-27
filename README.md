@@ -13,11 +13,15 @@ Manual Stepping - button to switch from auto-clock to manual clock. Default high
 Databus Manual Switch - Switch to manual input into the databus  
 
 #### Microinstructions
-RAw - Register A write. Writes to register from databus  
-RAr - Register A read. Outputs value to databus  
+RAw - Register A write. Writes to register from databus (1 bit)  
+RAr - Register A read. Outputs value to databus (1 bit)  
 
-RBw - Register B write. Writes to register from databus  
-RBr - Register B read. Outputs value to databus  
+RBw - Register B write. Writes to register from databus (1 bit)  
+RBr - Register B read. Outputs value to databus (1 bit)  
+
+SRw - Sum Register write. Writes from ALU to sum register (1 bit)  
+SRr - Sum Register read. Ouputs value to databus (1 bit)  
+ALUop - Operation to perform. (4 bits)
 
 ## ALU
 ### Inputs
