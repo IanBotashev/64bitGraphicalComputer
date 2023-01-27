@@ -20,8 +20,12 @@ RBw - Register B write. Writes to register from databus (1 bit)
 RBr - Register B read. Outputs value to databus (1 bit)  
 
 SRw - Sum Register write. Writes from ALU to sum register (1 bit)  
-SRr - Sum Register read. Ouputs value to databus (1 bit)  
-ALUop - Operation to perform. (4 bits)
+SRr - Sum Register read. Outputs value to databus (1 bit)  
+ALUop - Operation to perform. (4 bits)  
+
+ADDRw - Addres Register Write. Takes 16 bits from databus and stores it (1 bit)  
+RAMw - RAM write. Writes from databus at specified address (1 bit)  
+RAMr - RAM read. Outputs value to databus (1 bit)  
 
 ## ALU
 ### Inputs
