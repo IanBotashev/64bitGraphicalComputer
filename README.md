@@ -1,5 +1,5 @@
 # 64-bit Graphical CPU
-
+Uses ["Digital"](https://github.com/hneemann/Digital) by hneeman
 ## CPU
 ### Inputs
 #### Tunnels
