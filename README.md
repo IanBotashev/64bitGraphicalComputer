@@ -13,6 +13,14 @@ Manual Stepping - button to switch from auto-clock to manual clock. Default high
 Databus Manual Switch - Switch to manual input into the databus  
 
 #### Microinstructions
+IRw - Instruction Register Write. Outputs to the control logic  
+ROMr - Output the contents of the ROM to the databus  
+  
+PAinc - Program Address Increment. Increments the address by one  
+PAw - Program Address write. Takes from databus  
+
+CCclr - Reset Control Counter to 0.
+
 RAw - Register A write. Writes to register from databus (1 bit)  
 RAr - Register A read. Outputs value to databus (1 bit)  
 
