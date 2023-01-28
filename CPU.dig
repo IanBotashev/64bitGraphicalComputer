@@ -1220,7 +1220,7 @@
         </entry>
         <entry>
           <string>Data</string>
-          <data>1,100,2</data>
+          <data>7,7c,3</data>
         </entry>
       </elementAttributes>
       <pos x="2080" y="-20"/>
@@ -1257,7 +1257,8 @@
         </entry>
         <entry>
           <string>Data</string>
-          <data>7,8,14*0,7,200e,14*0,7,4080,1048,13*0,7</data>
+          <data>7,8,14*0,7,200e,14*0,7,4080,1048,13*0,7,4080,2028,13*0,7,80e,14*0
+,7,4080,448,13*0,7,4080,828,13*0,7,4080,4e</data>
         </entry>
       </elementAttributes>
       <pos x="1960" y="220"/>
@@ -1400,6 +1401,10 @@
       <elementName>Splitter</elementName>
       <elementAttributes>
         <entry>
+          <string>rotation</string>
+          <rotation rotation="1"/>
+        </entry>
+        <entry>
           <string>Input Splitting</string>
           <string>64</string>
         </entry>
@@ -1408,7 +1413,7 @@
           <string>20</string>
         </entry>
       </elementAttributes>
-      <pos x="1820" y="240"/>
+      <pos x="1900" y="300"/>
     </visualElement>
     <visualElement>
       <elementName>Tunnel</elementName>
@@ -1603,6 +1608,10 @@
     <wire>
       <p1 x="2080" y="340"/>
       <p2 x="2240" y="340"/>
+    </wire>
+    <wire>
+      <p1 x="1740" y="340"/>
+      <p2 x="1900" y="340"/>
     </wire>
     <wire>
       <p1 x="1120" y="20"/>
@@ -1809,14 +1818,6 @@
       <p2 x="1960" y="240"/>
     </wire>
     <wire>
-      <p1 x="1840" y="240"/>
-      <p2 x="1900" y="240"/>
-    </wire>
-    <wire>
-      <p1 x="1740" y="240"/>
-      <p2 x="1820" y="240"/>
-    </wire>
-    <wire>
       <p1 x="1120" y="500"/>
       <p2 x="1140" y="500"/>
     </wire>
@@ -1945,20 +1946,24 @@
       <p2 x="680" y="-80"/>
     </wire>
     <wire>
-      <p1 x="1100" y="240"/>
-      <p2 x="1100" y="280"/>
-    </wire>
-    <wire>
-      <p1 x="1740" y="240"/>
-      <p2 x="1740" y="340"/>
-    </wire>
-    <wire>
-      <p1 x="1740" y="340"/>
-      <p2 x="1740" y="380"/>
+      <p1 x="1900" y="300"/>
+      <p2 x="1900" y="340"/>
     </wire>
     <wire>
       <p1 x="1900" y="400"/>
       <p2 x="1900" y="420"/>
+    </wire>
+    <wire>
+      <p1 x="1900" y="240"/>
+      <p2 x="1900" y="280"/>
+    </wire>
+    <wire>
+      <p1 x="1100" y="240"/>
+      <p2 x="1100" y="280"/>
+    </wire>
+    <wire>
+      <p1 x="1740" y="340"/>
+      <p2 x="1740" y="380"/>
     </wire>
     <wire>
       <p1 x="1040" y="240"/>
