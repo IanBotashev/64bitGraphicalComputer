@@ -73,4 +73,10 @@ DIV {memory address}
 Divide a number from memory with a value in Register. Memory Address is on the same line.  
 A / ADDRESS  
 
-0b00000000000000001011 (10)
+0b00000000000000001011 (11)
+
+## JMP
+DIV {memory address}
+Jump to that memory address in the ROM 
+
+0b00000000000000001100 (12)

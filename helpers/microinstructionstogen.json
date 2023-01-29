@@ -1,8 +1,6 @@
 {
   "values": [
-    {"PAinc": 1, "IRw": 1, "ROMr": 1},
-    {"DBout": 1, "ADDRw": 1},
-    {"ALUop": "0011", "SRw": 1, "RAMr": 1},
-    {"SRr": 1, "RAw": 1, "CCclr": 1}
+    {"PAinc": 0, "IRw": 1, "ROMr": 1},
+    {"CCclr": 1, "DBout": 1, "PAw": 1}
   ]
 }
