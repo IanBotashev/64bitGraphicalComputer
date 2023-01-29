@@ -45,13 +45,32 @@ SLI {MEMORY ADDRESS}, {VALUE}
 Store Literal, stores a value from ROM into the RAM. Memory Address on same line,  
 Value to store on the next address.  
 
-0b00000000000000000110 (7) 
+0b00000000000000000111 (7) 
 
 ## ADD
 ADD {memory address}  
-Add a number from memory with a value in register A.  
+Add a number from memory with a value in register A. Memory Address is on the same line.  
 A + ADDRESS  
-0x4080
-0x220
-0x2108
-0b00000000000000000000 (UNDEFINED YET)
+
+0b00000000000000001000 (8)
+
+## SUB
+SUB {memory address}
+Subtract a number from memory with a value in Register. Memory Address is on the same line.  
+A - ADDRESS  
+
+0b00000000000000001001 (9)
+
+## MUL
+MUL {memory address}
+Multiply a number from memory with a value in Register. Memory Address is on the same line.  
+A * ADDRESS  
+
+0b00000000000000001010 (10)
+
+## DIV
+DIV {memory address}
+Divide a number from memory with a value in Register. Memory Address is on the same line.  
+A / ADDRESS  
+
+0b00000000000000001011 (10)
