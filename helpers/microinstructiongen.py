@@ -17,7 +17,8 @@ instructions = {
     "RAr": 0,
     "RAw": 0,
     "DBout": 0,
-    "ALUop": 0000,
+    "ALUop": "0000",
+    "CPAw": "000",
 }
 
 

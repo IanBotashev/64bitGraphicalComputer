@@ -76,7 +76,26 @@ A / ADDRESS
 0b00000000000000001011 (11)
 
 ## JMP
-DIV {memory address}
+JMP {memory address}
 Jump to that memory address in the ROM 
 
 0b00000000000000001100 (12)
+
+## JEZ
+JEZ {memory address}
+Jump to that memory address in the ROM if the last operation in the ALU equaled zero.  
+
+0b00000000000000001100 (12)
+
+## JEN
+JEN {memory address}
+Jump to that memory address in the ROM if the last operation in the ALU is negative.  
+
+0b00000000000000001100 (13)
+
+## JGT
+JEN {memory address}
+Jump to that memory address in the ROM if the last operation in the ALU is negative.  
+
+(Not Implemented)
+0b00000000000000001100 (13)

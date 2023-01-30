@@ -3,7 +3,7 @@ The first 20 bits of the 64 in the ROM are for instructions.
 The 44 left over bits are for arguments.
 
 ## Microinstructions
-18 bits out, last 4 for ALU operation  
+21 bits out  
 Exact Order:  
 IRw  
 ROMr  
@@ -20,7 +20,8 @@ RBw
 RAr  
 RAw  
 DBout  
-ALUop  
+ALUop (4 bits)  
+CPAw (3 bits)
 
 ## Explanations
 IRw - Instruction Register Write. Outputs to the control logic  
@@ -28,7 +29,13 @@ ROMr - Output the contents of the ROM to the databus
   
 PAinc - Program Address Increment. Increments the address by one for the ROM on the next clock cycle  
 PAw - Program Address write. Takes from databus  
-
+CPAw - Conditional Address Write.
+0. Greater Than  
+1. Equal To  
+2. Lesser Than  
+3. Zero
+4. Negative
+  
 CCclr - Reset Control Counter to 0.
 
 RAw - Register A write. Writes to register from databus (1 bit)  
