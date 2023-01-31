@@ -230,7 +230,7 @@
           <string>RAr</string>
         </entry>
       </elementAttributes>
-      <pos x="660" y="180"/>
+      <pos x="640" y="180"/>
     </visualElement>
     <visualElement>
       <elementName>Driver</elementName>
@@ -240,7 +240,7 @@
           <int>64</int>
         </entry>
       </elementAttributes>
-      <pos x="660" y="220"/>
+      <pos x="640" y="220"/>
     </visualElement>
     <visualElement>
       <elementName>Tunnel</elementName>
@@ -250,7 +250,7 @@
           <string>databus</string>
         </entry>
       </elementAttributes>
-      <pos x="700" y="220"/>
+      <pos x="680" y="220"/>
     </visualElement>
     <visualElement>
       <elementName>Tunnel</elementName>
@@ -459,7 +459,7 @@
           <string>RA</string>
         </entry>
       </elementAttributes>
-      <pos x="640" y="240"/>
+      <pos x="620" y="240"/>
     </visualElement>
     <visualElement>
       <elementName>Tunnel</elementName>
@@ -1940,11 +1940,11 @@
     </wire>
     <wire>
       <p1 x="520" y="220"/>
-      <p2 x="640" y="220"/>
+      <p2 x="620" y="220"/>
     </wire>
     <wire>
-      <p1 x="680" y="220"/>
-      <p2 x="700" y="220"/>
+      <p1 x="660" y="220"/>
+      <p2 x="680" y="220"/>
     </wire>
     <wire>
       <p1 x="1100" y="220"/>
@@ -2219,8 +2219,8 @@
       <p2 x="640" y="360"/>
     </wire>
     <wire>
-      <p1 x="640" y="220"/>
-      <p2 x="640" y="240"/>
+      <p1 x="640" y="180"/>
+      <p2 x="640" y="200"/>
     </wire>
     <wire>
       <p1 x="1280" y="540"/>
@@ -2261,6 +2261,10 @@
     <wire>
       <p1 x="1320" y="540"/>
       <p2 x="1320" y="560"/>
+    </wire>
+    <wire>
+      <p1 x="620" y="220"/>
+      <p2 x="620" y="240"/>
     </wire>
     <wire>
       <p1 x="2380" y="360"/>
@@ -2309,10 +2313,6 @@
     <wire>
       <p1 x="1300" y="180"/>
       <p2 x="1300" y="200"/>
-    </wire>
-    <wire>
-      <p1 x="660" y="180"/>
-      <p2 x="660" y="200"/>
     </wire>
     <wire>
       <p1 x="1780" y="-80"/>
