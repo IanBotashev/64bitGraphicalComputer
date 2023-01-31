@@ -30,14 +30,14 @@ ROMr - Output the contents of the ROM to the databus
 PAinc - Program Address Increment. Increments the address by one for the ROM on the next clock cycle  
 PAw - Program Address write. Takes from databus  
 CPAw - Conditional Address Write.
-0. Greater Than  
-1. Equal To  
-2. Lesser Than  
-3. Zero
-4. Negative
+1. Greater Than  
+2. Equal To  
+3. Lesser Than  
+4. Zero
+5. Negative
   
 CCclr - Reset Control Counter to 0.
-
++
 RAw - Register A write. Writes to register from databus (1 bit)  
 RAr - Register A read. Outputs value to databus (1 bit)  
 

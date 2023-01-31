@@ -94,8 +94,19 @@ Jump to that memory address in the ROM if the last operation in the ALU is negat
 0b00000000000000001100 (13)
 
 ## JGT
-JEN {memory address}
-Jump to that memory address in the ROM if the last operation in the ALU is negative.  
+JGT {jump address}, {compare address}
+Evaluate if register A value > the value in the memory address, if true, jump.  
 
-(Not Implemented)
-0b00000000000000001100 (13)
+0b00000000000000001101 (14)
+
+## JET
+JET {jump address}, {compare address}
+Evaluate if register A value == the value in the memory address, if true, jump.  
+
+0b00000000000000001110 (15)
+
+## JLT
+JLT {jump address}, {compare address}
+Evaluate if register A value < the value in the memory address, if true, jump.  
+
+0b00000000000000001111 (16)
