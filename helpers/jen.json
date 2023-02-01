@@ -1,0 +1,6 @@
+{
+  "values": [
+    {"PAinc": 1, "IRw": 1, "ROMr": 1},
+    {"DBout": 1, "CCclr": 1, "CPAw": "101"}
+  ]
+}

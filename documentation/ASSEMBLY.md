@@ -1,5 +1,6 @@
 # Assembly
 Each instruction is 20 bits of a full 64
+
 ## NOP
 NOP  
 Does nothing for a clock cycle  
@@ -85,28 +86,34 @@ Jump to that memory address in the ROM
 JEZ {memory address}
 Jump to that memory address in the ROM if the last operation in the ALU equaled zero.  
 
-0b00000000000000001100 (12)
+0b00000000000000001101 (13)
 
 ## JEN
 JEN {memory address}
 Jump to that memory address in the ROM if the last operation in the ALU is negative.  
 
-0b00000000000000001100 (13)
+0b00000000000000001110 (14)
 
 ## JGT
 JGT {jump address}, {compare address}
 Evaluate if register A value > the value in the memory address, if true, jump.  
 
-0b00000000000000001101 (14)
+0b00000000000000001111 (15)
 
 ## JET
 JET {jump address}, {compare address}
 Evaluate if register A value == the value in the memory address, if true, jump.  
 
-0b00000000000000001110 (15)
+0b00000000000000010000 (16)
 
 ## JLT
 JLT {jump address}, {compare address}
 Evaluate if register A value < the value in the memory address, if true, jump.  
 
-0b00000000000000001111 (16)
+0b00000000000000010001 (17)
+
+## HLT
+HLT 
+Halt the clock.
+
+0b00000000000000010010 (18)

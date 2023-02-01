@@ -19,11 +19,13 @@ instructions = {
     "DBout": 0,
     "ALUop": "0000",
     "CPAw": "000",
+    "HLT": 0,
 }
 
 
 def main():
-    with open("microinstructionstogen.json", 'r') as f:
+    file = input("file: ")
+    with open(file, 'r') as f:
         file = json.load(f)
         values = file["values"]
         for value in values:
