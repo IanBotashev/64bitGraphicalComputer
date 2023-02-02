@@ -64,6 +64,11 @@ class Tokenizer:
             data = line[self.index]
             token_type = self.get_token_type(data)
 
+            # Don't do anything about ignored characters.
+            if token_type == TokenType.IGNORE:
+                self.index += 1
+                continue
+
             # Check if the token type is an invalid one
             if token_type == TokenType.INVALID:
                 raise InvalidCharacterException(f"Invalid Character '{data}' at position {self.index}")
@@ -72,6 +77,10 @@ class Tokenizer:
                 # Replace the one character data with this new, elongated one.
                 data, index_offset = self.get_string_type(line, token_type)
                 self.index += index_offset
+
+            # If it's a newline, don't actually put the newline in there. instead just put an empty space.
+            if token_type == TokenType.NEWLINE:
+                data = ""
 
             result.append(Token(token_type, data))
             self.index += 1
@@ -111,6 +120,6 @@ class Tokenizer:
 
 if __name__ == "__main__":
     tokenizer = Tokenizer()
-    while True:
-        line_ = input('>')
-        print(" ", tokenizer.tokenize(line_))
+    with open("test.asm", 'r') as f:
+        results = tokenizer.tokenize(f.read())
+        print(results)
