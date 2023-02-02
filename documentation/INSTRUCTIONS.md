@@ -1,9 +1,9 @@
 # Instructions
-The first 20 bits of the 64 in the ROM are for instructions.  
-The 44 left over bits are for arguments.
+The first 8 bits of the 64 in the ROM are for instructions.  
+The 56 left over bits are for arguments.
 
 ## Microinstructions
-23 bits out  
+25 bits out  
 Exact Order:  
 IRw  
 ROMr  
@@ -23,6 +23,8 @@ DBout
 ALUop (4 bits)  
 CPAw (3 bits)
 HLT
+D1out
+D2out
 
 ## Explanations
 IRw - Instruction Register Write. Outputs to the control logic  
@@ -55,3 +57,7 @@ RAMw - RAM write. Writes from databus at specified address (1 bit)
 RAMr - RAM read. Outputs value to databus (1 bit)
 
 HLT - Halts clock from further cycles.
+
+DBout - Outputs everything but the instruction onto the databus.
+D1out - Outputs first half of DBout onto the databus
+D2out - Outputs second half of DBout onto the databus

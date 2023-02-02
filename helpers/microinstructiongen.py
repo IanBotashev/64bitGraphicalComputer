@@ -20,6 +20,8 @@ instructions = {
     "ALUop": "0000",
     "CPAw": "000",
     "HLT": 0,
+    "D1out": 0,
+    "D2out": 0,
 }
 
 
